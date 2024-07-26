@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+    <style>
+        #navbar-background {
+            background-color: rgb(90, 87, 87);
+            opacity: 0.5;
+            filter: (opacity=50);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+            /* Ensure the navbar is above the image */
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Cover the container without stretching the image */
+            position: relative;
+            z-index: 0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav-item {
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="row row-cols-md-2 border">
+        <div class="col-md-6 d-flex justify-content-start">
+            <img src="./2.png" class="d-none d-md-block">
+        </div>
+        <div class="col d-flex justify-content-end flex-column">
+
+            <div class="row d-flex justify-content-end">
+                <div class="col-md-2 border">sign in</div>
+                <div class="col-md-4 border">
+                    create account
+                </div>
+                <div class="col-md-4 border">
+                    find pizza
+                </div>
+                <div class="col-md-2 border">عربي</div>
+            </div>
+
+            <div class="row ">
+                <div class="col-m-6 d-flex justify-content-end p-2 gap-2 ">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone-fill align-self-stretch" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <p style="font-size: small;" class="align-self-center"> CALL US 19000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-md-2 row-cols-sm-1 d-flex justify-content-between ">
+        <div class="col d-flex row row-cols-md-5 btn btn-group">
+            <div class="btn btn-outline-dark d-none d-md-block">PIZZA</div>
+            <div class="btn btn-outline-dark d-none d-md-block">STARTERS</div>
+            <div class="btn btn-outline-dark d-none d-md-block">SALADS</div>
+            <div class="btn btn-outline-dark dropdown-toggle d-none d-md-block">MORE
+            </div>
+            <div class="btn bg-danger d-none d-md-block">DEALS</div>
+
+        </div>
+
+        <div class="col-md btn btn-danger d-flex justify-content-center btn-group btn-group-lg">
+            START YOUR ORDER
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="./3.png" class="background-image d-none d-md-block">
+
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar-background">
+            <a class="navbar-brand nav-item  btn active" href="#">ALL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link " href="#">BEEF<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">CHICKEN</a>
+                    <a class="nav-item nav-link" href="#">VEGETRIAN</a>
+                    <a class="nav-item nav-link " href="#">EXTREME PIZZA</a>
+                    <a class="nav-item nav-link " href="#">SEA FOOD</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="body-container row row-cols-md-2 row-cols-lg-3 d-flex justify-content-between">
+        <div class="col row">
+            <div class="card d-flex flex-row" style="width: 100%">
+                <div>
+                    <img class="card-img-right" src="./4.png" alt="Card image cap">
+                    <h2>EGP 75.88</h2>
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">SUPER SUPREME</h5>
+                    <p class="card-text">Our famous combination of Beef Pepperoni juicy Beef Mushrooms,Gren Peppers
+                        Onions Black olives and molten mozzarila cheese</p>
+                    <div class="d-flex" id="order-form">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                pan
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Medium
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-secondary btn-sm">CUSTOMIZE</a>
+                        <a href=" #" class="btn btn-danger btn-lg">ADD TO CARD</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card d-flex flex-row" style="width: 100%;">
+                <div>
+                    <img class="card-img-right" src="./5.png" alt="Card image cap">
+                    <h2>EGP 64.47</h2>
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CLASSIC Pepperoni</h5>
+                    <p class="card-text">Our famous combination of Beef Pepperoni juicy Beef Mushrooms,Gren Peppers
+                        Onions Black olives and molten mozzarila cheese</p>
+                    <div class="d-flex" id="order-form">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                pan
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Medium
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-secondary btn-sm">CUSTOMIZE</a>
+                        <a href=" #" class="btn btn-danger btn-lg">ADD TO CARD</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card d-flex flex-row" style="width:100%;">
+                <div>
+                    <img class="card-img-right" src="./5.png" alt="Card image cap">
+                    <h2>EGP 75.88
+                    </h2>
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CHICKEN SUPREME
+                    </h5>
+                    <p class="card-text">The ultimate match of Chicken together with Mushrooms, Red Onions, Green
+                        Peppers, fresh Tomatoes, Olives and melting mozzarella cheese.</p>
+                    <div class="d-flex" id="order-form">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                pan
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Medium
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-secondary btn-sm">CUSTOMIZE</a>
+                        <a href=" #" class="btn btn-danger btn-lg">ADD TO CARD</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card d-flex flex-row" style="width: 100%;">
+                <div>
+                    <img class="card-img-right" src="./6.png" alt="Card image cap">
+                    <h2>EGP 110.53</h2>
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">SPICY CHICKEN RANCH </h5>
+                    <p class="card-text">Grilled chicken, fresh tomatoes, mushrooms and green Jalapeño peppers with a
+                        drizzle of thick Peri Peri sauce.</p>
+                    <div class="d-flex" id="order-form">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                pan
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Medium
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-secondary btn-sm">CUSTOMIZE</a>
+                        <a href=" #" class="btn btn-danger btn-lg">ADD TO CARD</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

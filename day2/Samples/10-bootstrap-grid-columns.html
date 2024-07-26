@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>Bootstrap | Bootstrap Grid Columns</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Bootstrap Grid Columns</h1>
+
+      <!-- Basic Grid Layout -->
+<!--      <div class="row">-->
+<!--        <div class="col bg-primary">1</div>-->
+<!--        <div class="col bg-warning">2</div>-->
+<!--      </div>-->
+<!--      <div class="row">-->
+<!--        <div class="col bg-primary">1</div>-->
+<!--        <div class="col bg-warning">2</div>-->
+<!--        <div class="col bg-danger">3</div>-->
+<!--      </div>-->
+      <div class="row">
+        <div class="col bg-primary">1</div>
+        <div class="col bg-warning">2</div>
+        <div class="col bg-danger">3</div>
+        <div class="col bg-secondary">4</div>
+      </div>
+
+      <br /><br />
+
+      <!-- Column Sizes -->
+      <div class="row">
+        <div class="col-4 bg-primary">1</div>
+        <div class="col-6 bg-warning">2</div>
+        <div class="col-2 bg-danger">3</div>
+      </div>
+
+      <br /><br />
+
+      <!-- Responsive Grid -->
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-primary">1</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-warning">2</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-danger">3</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-secondary">4</div>
+      </div>
+
+      <br /><br />
+
+      <!-- Row Cols -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+        <div class="col bg-light border border-dark">column</div>
+      </div>
+
+      <br /><br />
+
+      <br /><br />
+
+      <!-- Nesting -->
+      <div class="row">
+        <div class="col bg-primary">1</div>
+        <div class="col bg-warning">2</div>
+        <div class="col">
+          <div class="row">
+            <div class="col-4 bg-success">1</div>
+            <div class="col-4 bg-secondary">2</div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Gutters -->
+      <!-- Gutters are the gaps between column content, created by horizontal padding. -->
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="p-3 bg-primary">Item1</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-warning">Item2</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-danger">Item3</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-primary">Item1</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-warning">Item2</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-danger">Item3</div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Offsetting Columns -->
+
+      <div class="row">
+        <div class="col-6 bg-primary">
+          section
+        </div>
+        <div class="col-4 offset-md-2 bg-warning">side bar</div>
+      </div>
+
+      <br /><br />
+
+      <!-- Ordering -->
+      <div class="row">
+        <div class="col bg-primary order-5">1</div>
+        <div class="col bg-warning order-3">2</div>
+        <div class="col bg-danger order-4">3</div>
+        <div class="col bg-secondary order-1">4</div>
+        <div class="col bg-info order-2">5</div>
+      </div>
+
+      <!-- ^_^ -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

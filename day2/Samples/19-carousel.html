@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <title>Bootstrap | Carousel</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-5">Carousel</h1>
+
+    <!-- Carousel -->
+    <div class="carousel slide" id="slider" data-bs-ride="carousel">
+
+        <!--        carousel indicator-->
+        <div class="carousel-indicators">
+            <button data-bs-target="#slider" class="active" data-bs-slide-to="0"></button>
+            <button data-bs-target="#slider" data-bs-slide-to="1"></button>
+            <button data-bs-target="#slider" data-bs-slide-to="2"></button>
+        </div>
+
+        <!--        carousel inner-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.webp" alt="" class="w-100" style="height: 600px">
+                <div class="carousel-caption bg-secondary bg-opacity-50">
+                    <h5>Toaster</h5>
+                    <p>this is a description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" alt="" class="w-100" style="height: 600px">
+                <div class="carousel-caption bg-secondary bg-opacity-50">
+                    <h5>Brush</h5>
+                    <p>this is a description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpeg" alt="" class="w-100" style="height: 600px">
+                <div class="carousel-caption bg-secondary bg-opacity-50">
+                    <h5>Iphone</h5>
+                    <p>this is a description</p>
+                </div>
+            </div>
+        </div>
+
+        <!--        carousel buttons-->
+        <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- ^_^ -->
+</div>
+<div style="margin-top: 350px"></div>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

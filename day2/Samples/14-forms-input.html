@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <title>Bootstrap | Forms & Input</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-5">Forms & Input</h1>
+
+    <!-- Basic Form -->
+    <form>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="check" class="form-check-input">
+            <label for="check" class="form-check-label">remember me</label>
+        </div>
+        <div class="vstack mt-2">
+            <input type="submit" value="Login" class="btn btn-primary">
+        </div>
+    </form>
+
+    <br/><br/>
+
+    <!-- Other Fields -->
+    <form>
+        <!-- Select Fields -->
+        <div class="mb-3">
+            <select class="form-select">
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+                <option>option4</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="mb-3">
+            <textarea class="form-control"></textarea>
+        </div>
+
+        <!-- Switch -->
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+        </div>
+
+        <!-- Inline Checkboxes -->
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">4</label>
+            </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <div class="mb-3">
+            <input type="checkbox" class="btn-check" id="checktoggle">
+            <label class="btn btn-outline-danger" for="checktoggle">toggle button</label>
+        </div>
+
+        <!-- Range -->
+        <div class="mb-3">
+            <label for="range" class="form-label"></label>
+            <input type="range" id="range" class="form-range bg-primary">
+        </div>
+
+        <!-- Range Steps -->
+    </form>
+
+    <br/><br/>
+
+    <!-- Input Groups -->
+    <form>
+        <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input type="email" class="form-control">
+        </div>
+    </form>
+    <form>
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <button type="submit" class="btn btn-secondary">Add product</button>
+        </div>
+    </form>
+
+    <!-- ^_^ -->
+</div>
+<div style="margin-top: 350px"></div>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
